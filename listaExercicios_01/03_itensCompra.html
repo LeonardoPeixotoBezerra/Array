@@ -1,0 +1,33 @@
+<script>
+    //Problema: Itens da lista de compras
+    //Peça para o usuário inserir 3 frutas para a lista de compras. (Use 3 vezes o prompt).
+    //Peça também para o usuário inserir 3 bebidas para a lista de compras (Use outras 3 vezes o prompt).
+    //Crie um array para cada tipo de item e, ao fim, apresente os itens da sequinte forma: 
+    //As frutas a serem compradas são: fruta1, fruta2, fruta3.
+    //As bebidas a serem compradas são: bebida1, bebida2, bebida3.
+    //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
+
+    //ENTRADA
+    const fruta1 = prompt("Fruta:");
+    const fruta2 = prompt("Fruta:");
+    const fruta3 = prompt("Fruta:");
+
+    const bebida1 = prompt("bebida:");
+    const bebida2 = prompt("bebida:");
+    const bebida3 = prompt("bebida:");
+
+
+    //PROCESSAMENTO
+    const frutas = [fruta1, fruta2, fruta3];
+    const bebidas = [bebida1, bebida2, bebida3];
+    const listaAlimentos = frutas.concat(bebidas);
+
+
+    document.write(`As frutas a serem compradas são: ${frutas.join("  -  ")}</br></br>
+                    As bebidas a serem compradas são: ${bebidas.join("  -  ")}</br></br>
+                    A lista completa da compra é: ${listaAlimentos.join("  -  ")}
+                    `)
+
+    //SAÍDA
+
+</script>
